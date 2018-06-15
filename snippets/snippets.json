@@ -1,0 +1,197 @@
+{
+  "Voxa Intent": {
+    "prefix": "onintentVoxa",
+    "body": [
+      "${1:skill}.onIntent('$2', (${3:alexaEvent}) => {",
+      "\t$4",
+      "});"
+    ],
+    "description": "Voxa Intent method"
+  },
+  "Voxa Launch Intent": {
+    "prefix": "launchintentVoxa",
+    "body": [
+      "${1:skill}.onIntent('LaunchIntent', (${2:alexaEvent}) => {",
+      "\t$3",
+      "});"
+    ],
+    "description": "Voxa Launch Intent method"
+  },
+  "Voxa Help Intent": {
+    "prefix": "helpintentVoxa",
+    "body": [
+      "${1:skill}.onIntent('AMAZON.HelpIntent', (${2:alexaEvent}) => {",
+      "\t$3",
+      "});"
+    ],
+    "description": "Voxa Help Intent method"
+  },
+  "Voxa Repeat Intent": {
+    "prefix": "repeatintentVoxa",
+    "body": [
+      "${1:skill}.onIntent('AMAZON.RepeatIntent', (${2:alexaEvent}) => {",
+      "\t$3",
+      "});"
+    ],
+    "description": "Voxa Repeat Intent method"
+  },
+  "Voxa StartOver Intent": {
+    "prefix": "startoverintentVoxa",
+    "body": [
+      "${1:skill}.onIntent('AMAZON.StartOverIntent', (${2:alexaEvent}) => {",
+      "\t$3",
+      "});"
+    ],
+    "description": "Voxa StartOver Intent method"
+  },
+  "Voxa entry Intent": {
+    "prefix": "entryVoxa",
+    "body": [
+      "${1:skill}.onState('entry', {",
+      "\t$2",
+      "});"
+    ],
+    "description": "Voxa entry state method"
+  },
+  "Voxa State": {
+    "prefix": "onstateVoxa",
+    "body": [
+      "${1:skill}.onState('$2', (${3:alexaEvent}) => {",
+      "\t$4",
+      "});"
+    ],
+    "description": "Voxa State method"
+  },
+  "Voxa return": {
+    "prefix": "replyVoxa",
+    "body": [
+      "return { reply: '${1}', to: '${2}' };"
+    ],
+    "description": "Voxa return view"
+  },
+  "Voxa return to": {
+    "prefix": "toVoxa",
+    "body": [
+      "return { to: '${1}' };"
+    ],
+    "description": "Voxa return to state"
+  },
+  "Voxa views function": {
+    "prefix": "viewsVoxa",
+    "body": [
+      "const views = (function views() {",
+      "\treturn {",
+      "\t\t${1}",
+      "\t};",
+      "}());"
+    ],
+    "description": "Voxa view function boilerplate"
+  },
+  "Voxa ask": {
+    "prefix": "askVoxa",
+    "body": [
+      "${1:ResponseName}: {",
+      "\task: '${2}',",
+      "\treprompt: '${3}',",
+      "},"
+    ],
+    "description": "Voxa ask view"
+  },
+  "Voxa tell": {
+    "prefix": "tellVoxa",
+    "body": [
+      "${1:ResponseName}: {",
+      "\ttell: '${2}',",
+      "},"
+    ],
+    "description": "Voxa tell view"
+  },
+  "Voxa say": {
+    "prefix": "sayVoxa",
+    "body": [
+      "${1:ResponseName}: {",
+      "\tsay: '${2}',",
+      "},"
+    ],
+    "description": "Voxa say view"
+  },
+  "Voxa variables": {
+    "prefix": "variablesVoxa",
+    "body": [
+      "module.exports = {",
+      "\t${1:variableName}: model => model.${1:variableName},${2}",
+      "};"
+    ],
+    "description": "Voxa variables snippets"
+  },
+  "Voxa if yes intent": {
+    "prefix": "ifyesVoxa",
+    "body": [
+      "if (alexaEvent.intent.name === 'AMAZON.YesIntent') {",
+      "\t${1}",
+      "}"
+    ],
+    "description": "Voxa if yes intent"
+  },
+  "Voxa if no intent": {
+    "prefix": "ifnoVoxa",
+    "body": [
+      "if (alexaEvent.intent.name === 'AMAZON.NoIntent') {",
+      "\t${1}",
+      "}"
+    ],
+    "description": "Voxa if no intent"
+  },
+  "Voxa if intent": {
+    "prefix": "ifintentnameVoxa",
+    "body": [
+      "if (alexaEvent.intent.name === '${1}') {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "Voxa if intent"
+  },
+  "Voxa register states function": {
+    "prefix": "registerVoxa",
+    "body": [
+      "exports.register = function register(skill) {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "Voxa register state function"
+  },
+  "Voxa Main State Machine": {
+    "prefix": "mainstatemachineVoxa",
+    "body": [
+      "const Voxa = require('voxa');",
+      "const views = require('${1:./views}');",
+      "const variables = require('${2:./variables}');",
+      "const states = require('${3:./states}');",
+      "",
+      "const skill = new Voxa({ variables, views });",
+      "states.register(skill);",
+      "",
+      "module.exports = skill;"
+    ],
+    "description": "Voxa Main State Machine"
+  },
+  "Voxa Server": {
+    "prefix": "serverVoxa",
+    "body": [
+      "const skill = require('${1:./skill/MainStateMachine}');",
+      "const config = require('${2:./config}');",
+      "",
+      "skill.startServer(config.server.port);"
+    ],
+    "description": "Voxa server"
+  },
+  "Voxa Lambda": {
+    "prefix": "lambdaVoxa",
+    "body": [
+      "const skill = require('${1:./skill/MainStateMachine}');",
+      "",
+      "exports.handler = skill.lambda();"
+    ],
+    "description": "Voxa lambda"
+  }
+}

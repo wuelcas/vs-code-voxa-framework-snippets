@@ -1,0 +1,27 @@
+{
+    "name": "vscode-voxa-framework-snippets",
+    "displayName": "Voxa Framework Snippets",
+    "description": "Code snippets to speed up your Alexa skill development using the Voxa framework",
+    "keywords": ["Voxa", "Alexa", "Skill", "Google Home", "Action", "Cortana", "RAIN", "Amazon"],
+    "icon": "images/voxa-logo.png",
+    "version": "1.0.0",
+    "publisher": "wuelcas",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wuelcas/vs-code-voxa-framework-snippets.git"
+    },
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
