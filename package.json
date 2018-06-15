@@ -2,7 +2,7 @@
     "name": "vscode-voxa-framework-snippets",
     "displayName": "Voxa Framework Snippets",
     "description": "Code snippets to speed up your Alexa skill development using the Voxa framework",
-    "keywords": ["Voxa", "Alexa", "Skill", "Google Home", "Action", "Cortana", "RAIN", "Amazon"],
+    "keywords": ["Voxa", "Alexa", "Skill", "Google Home", "Action"],
     "icon": "images/voxa-logo.png",
     "version": "1.0.0",
     "publisher": "wuelcas",
