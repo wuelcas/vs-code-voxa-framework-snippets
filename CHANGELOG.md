@@ -1,7 +1,5 @@
-# Change Log
-All notable changes to the "voxa-framework-snippets" extension will be documented in this file.
+## Voxa Snippets Changelog
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+# 1.0.0
 - Initial release
+- Snippets for state related develop and boilerplate code
