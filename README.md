@@ -1,5 +1,9 @@
 # Voxa Framework Snippets
 
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/wuelcas.vscode-voxa-framework-snippets.svg)](https://vsmarketplacebadge.apphb.com/version-short/wuelcas.vscode-voxa-framework-snippets.svg)
+[![Install](https://vsmarketplacebadge.apphb.com/installs-short/wuelcas.vscode-voxa-framework-snippets.svg)](https://vsmarketplacebadge.apphb.com/installs-short/wuelcas.vscode-voxa-framework-snippets.svg)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/wuelcas.vscode-voxa-framework-snippets.svg)](https://vsmarketplacebadge.apphb.com/rating-short/wuelcas.vscode-voxa-framework-snippets.svg)
+
 This extension provides you code snippets for [Vs Code](https://code.visualstudio.com/) to speed up your Alexa skills development using the [Voxa Framework](http://voxa.ai/) made by [RAIN](https://rain.agency/).
 
 
